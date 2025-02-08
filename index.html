@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="/css/app.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    *{
+      font-family: "Liter", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .rowdies-light {
+      font-family: "Rowdies", serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    .rowdies-regular {
+      font-family: "Rowdies", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .rowdies-bold {
+      font-family: "Rowdies", serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    .header-box{
+      box-shadow:  0 4px 5px 5px rgb(143, 143, 143);
+    }
+    .header-box__logo{
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+    }
+    .box-banner{
+      border-radius: 20px;
+      width: 45%;
+      background: white;
+      height: 400px;
+    }
+    .box-banner img{
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+
+    }
+  </style>
+</head>
+<body class="" style='background: url(https://betswing.com/wp-content/uploads/2024/04/Background_muro.jpg) no-repeat rgb(213, 213, 211);'>
+  <header  class="px-24 bg-orange-500 py-6 header-box flex justify-between items-end">
+    <div class="rowdies-bold text-4xl  text-white header-box__logo">El Ministro.com</div>
+    <div>
+      <ul class="flex items-center">
+        <li class="text-white mx-6 text-lg">Loterias</li>
+        <li class="text-white mx-6 text-lg">Deportes</li>
+        <li class="text-white mx-6 text-lg">Rifas</li>
+        <li class="text-white mx-6 text-lg">Rifas</li>
+        <li>
+          <button class="px-4 py-2 text-white flex items-center  rounded-full bg-blue-500 hover:bg-blue-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700 ...">
+            Haz tu apuesta!
+          </button>
+        </li>
+      </ul>
+    </div>
+
+  </header>
+  <!-- ===== Header end ===== -->
+
+  <!-- ===== Hero Start ===== -->
+  <section id="home" class=" ">
+    <div  style="border:0 solid rgb(148, 148, 148)" class="w-full">
+      <img src="/img/hero.png" alt="" class="w-full">
+    </div>
+  </section>
+  <section class="flex justify-center px-36 " style="transform: translateY(-5rem);">
+    <div class="mx-6 box-banner">
+      <img src="img/banner1.png" alt="">
+    </div>
+    <div class="mx-6 box-banner">
+      <img src="" alt="">
+    </div>
+  </section>
+</body>
+</html>
