@@ -143,7 +143,7 @@
       z-index: 2;
       position: relative;
     }
-    .link-direct > div{
+    .link-direct > div a{
       font-family: "Poppins", serif;
       font-weight: 600;
       transition: all 0.5s ease;
@@ -217,32 +217,101 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 45px; height: 45px; border-radius:10px; 
-       border: 0.3rem solid rgb(20, 1, 1);
+      width: 45px; 
+      height: 45px; 
+      border-radius:10px; 
+      border: 0.3rem solid rgb(20, 1, 1);
     }
     .step__description{
       border-radius: 10px;
+    }
+    .link_result--box{
+      box-shadow:  0 5px 10px 2px rgba(12, 12, 12, 0.459);
+      border-radius: 5px;
+      position: relative;
+      text-align: center;
+      cursor: pointer;
+    }
+    .link_result--box::before{
+      content: '';
+      border-radius: 5px;
+      transform: translateX(-1.5rem);
+      background: white;
+      top: 0;
+      left: 1.5rem;
+      right: 15rem;
+      bottom: 0;
+      display: block;
+      position: absolute;
+      visibility: visible;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+    .link_result--box div{
+      color: white;
+      position: relative;
+      font-family: "Poppins", serif;
+      font-weight: 700;
+      z-index: 2;
+      transition: all 0.5s ease;
+    }
+    .link_result--box:hover > div{
+      color: #193cb8;
+    }
+    .link_result--box:hover::before{
+      visibility: visible;
+      right: -1.5rem;
+    }
+    .text-float{
+      font-family: "Poppins", serif;
+      font-weight: 700;
+      border-radius: 30px;
+      box-shadow:  0 5px 10px 2px rgba(12, 12, 12, 0.459);
+
+    }
+    .WhatsappFloat{
+      width: 80px; height: 80px; border-radius: 50%;
+      box-shadow:  0 5px 10px 2px rgba(12, 12, 12, 0.459);
+      
+      animation: bounce2 2s ease 5;
+    }
+    .ws-ball_content{
+      position: fixed; bottom: 1rem; right: 1rem; display: flex; flex-direction: column; align-items: center;
+    }
+
+    @keyframes bounce2 {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-20px);}
+      60% {transform: translateY(-10px);}
     }
   </style>
 </head>
 <body class="" style='background: url(https://betswing.com/wp-content/uploads/2024/04/Background_muro.jpg); background-size: 100% 100%;'>
   <header  class="px-24 bg-blue-800 py-6 header-box flex justify-between items-end">
-    <div class="rowdies-bold text-4xl  text-white header-box__logo">El Ministro.com</div>
+    <a href="index.html">
+      <div class="rowdies-bold text-4xl  text-white header-box__logo">El Ministro.com</div>
+    </a>
     <div>
       <ul class="flex items-center">
         <li class="mx-6 px-6 text-center text-lg link-direct">
           <div class="relative text-white text-center w-full" style="z-index: 2;">
-            Loterias
+            <a href="lotery.html">
+              Loterias
+            </a>
           </div>
         </li>
         <li class="mx-6 px-6 text-center text-lg link-direct">
           <div class="relative text-white text-center w-full" style="z-index: 2;">
-            Deportes
+            <a href="sport.html">
+              Deportes
+            </a>
           </div>
         </li>
         <li class="mx-6 px-6 text-center text-lg link-direct">
           <div class="relative text-white text-center w-full" style="z-index: 2;">
-            Rifas
+            <a href="">
+              Rifas
+            </a>
           </div>
         </li>
         <li>
@@ -270,7 +339,30 @@
       </div>
     </div>
   </section>
-  <section class="flex justify-center px-36 " style="transform: translateY(-3rem);">
+  <section class="flex w-full justify-center" style="transform: translateY(-2rem);">
+    <a href="lotery.html">
+      <div class="link_result--box p-6 mx-5 bg-blue-800" >
+        <div>
+          Resultados Loteria
+        </div>
+      </div>
+    </a>
+    <a href="sport.html">
+    <div class="link_result--box p-6 mx-5 bg-blue-800" >
+        <div>
+          Resultados deportes
+        </div>
+      </div>
+    </a>
+    <a href="">
+      <div class="link_result--box p-6 mx-5 bg-blue-800" >
+        <div>
+          Resultados Rifas
+        </div>
+      </div>
+    </a>
+  </section>
+  <section class="flex justify-center px-36  mt-10" >
     <div class="mx-12 box-banner pt-5">
       <img src="img/banner1.png" alt="">
     </div>
@@ -278,7 +370,7 @@
       <img src="img/banner2.png" alt="">
     </div>
   </section>
-  <section class=" px-36  mx-12 ">
+  <section class="px-36 mx-12 mt-12">
     <div class="w-full">
       <div class=" pt-5 font-bold box-loterys__title text-3xl">
         Loterias
@@ -456,6 +548,14 @@
       <img src="img/bdv.webp" alt="">
       <img src="img/zelle.webp" alt="">
       <img src="img/bnc.webp" alt="">
+    </div>
+  </section>
+  <section>
+    <div class="ws-ball_content">
+      <div class=" bg-green-600 WhatsappFloat flex justify-center items-center">
+        <svg class="" fill="none" stroke="#ffffff" width="3rem" height="3rem" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#ffffff" fill-rule="evenodd" d="M96 16c-44.183 0-80 35.817-80 80 0 13.12 3.163 25.517 8.771 36.455l-8.608 36.155a6.002 6.002 0 0 0 7.227 7.227l36.155-8.608C70.483 172.837 82.88 176 96 176c44.183 0 80-35.817 80-80s-35.817-80-80-80ZM28 96c0-37.555 30.445-68 68-68s68 30.445 68 68-30.445 68-68 68c-11.884 0-23.04-3.043-32.747-8.389a6.003 6.003 0 0 0-4.284-.581l-28.874 6.875 6.875-28.874a6.001 6.001 0 0 0-.581-4.284C31.043 119.039 28 107.884 28 96Zm46.023 21.977c11.975 11.974 27.942 20.007 45.753 21.919 11.776 1.263 20.224-8.439 20.224-18.517v-6.996a18.956 18.956 0 0 0-13.509-18.157l-.557-.167-.57-.112-8.022-1.58a18.958 18.958 0 0 0-15.25 2.568 42.144 42.144 0 0 1-7.027-7.027 18.958 18.958 0 0 0 2.569-15.252l-1.582-8.021-.112-.57-.167-.557A18.955 18.955 0 0 0 77.618 52H70.62c-10.077 0-19.78 8.446-18.517 20.223 1.912 17.81 9.944 33.779 21.92 45.754Zm33.652-10.179a6.955 6.955 0 0 1 6.916-1.743l8.453 1.665a6.957 6.957 0 0 1 4.956 6.663v6.996c0 3.841-3.124 6.995-6.943 6.585a63.903 63.903 0 0 1-26.887-9.232 64.594 64.594 0 0 1-11.661-9.241 64.592 64.592 0 0 1-9.241-11.661 63.917 63.917 0 0 1-9.232-26.888C63.626 67.123 66.78 64 70.62 64h6.997a6.955 6.955 0 0 1 6.66 4.957l1.667 8.451a6.956 6.956 0 0 1-1.743 6.917l-1.12 1.12a5.935 5.935 0 0 0-1.545 2.669c-.372 1.403-.204 2.921.603 4.223a54.119 54.119 0 0 0 7.745 9.777 54.102 54.102 0 0 0 9.778 7.746c1.302.806 2.819.975 4.223.603a5.94 5.94 0 0 0 2.669-1.545l1.12-1.12Z" clip-rule="evenodd"/></svg>
+      </div>
+      <div class="bg-white py-2 px-3 mt-2 text-green-600 text-float">Unete al grupo de Whatsapp</div>
     </div>
   </section>
   <footer class="w-full bg-blue-800 px-24 pt-8 mt-24">
