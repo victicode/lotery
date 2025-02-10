@@ -3,20 +3,4 @@
   margin: 0;
   box-sizing: border-box;
 }
-.rowdies-light {
-  font-family: "Rowdies", serif;
-  font-weight: 300;
-  font-style: normal;
-}
 
-.rowdies-regular {
-  font-family: "Rowdies", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.rowdies-bold {
-  font-family: "Rowdies", serif;
-  font-weight: 700;
-  font-style: normal;
-}

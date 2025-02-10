@@ -168,11 +168,11 @@
       visibility: visible;
     }
     .link-direct.active > div{
-      color: #193cb8;
+      color: #193cb8!important;
     }
     .link-direct.active::before{
-      width: 90%;
-      visibility: visible;
+      width: 90%!important;
+      visibility: visible!important;
     }
     .depor__img{
       border-top-left-radius: 15px;
@@ -272,9 +272,9 @@
     .result__container{
       height: 1600vh;
       overflow: hidden;
-      /* height: 1600vh;
+      height: 1600vh;
       
-      width: 87%;
+      /*width: 87%;
       
       transform: translateX(8rem); */
     }
@@ -314,14 +314,14 @@
     </a>
     <div>
       <ul class="flex items-center">
-        <li class="mx-6 px-6 text-center text-lg link-direct">
+        <li class="mx-6 px-6 text-center text-lg link-direct ">
           <div class="relative text-white text-center w-full" style="z-index: 2;">
             <a href="lotery.html">
               Loterias
             </a>
           </div>
         </li>
-        <li class="mx-6 px-6 text-center text-lg link-direct">
+        <li class="mx-6 px-6 text-center text-lg link-direct active">
           <div class="relative text-white text-center w-full" style="z-index: 2;">
             <a href="sport.html">
               Deportes
@@ -349,9 +349,9 @@
     Resultados deportivos
   </section>
 
-  <div style="height: 600vh; overflow: hidden; border-radius: 100px;">
-
-    <section class=" mt-6   px-36 mx-auto result__container" >
+  <div style=" overflow: hidden; border-radius: 100px;">
+    <section class=" mt-6 px-36 mx-auto result__container" >
+      <iframe src="https://www.flashscore.com.ve/" allow="fullscreen" frameborder="0" class="w-full h-full" ></iframe>
     </section>
   </div>
   <section>
