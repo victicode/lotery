@@ -1,12 +1,11 @@
 <template>
   <section id="home" class=" ">
-    <div   class="w-full hero__section text-white flex items-center pl-20">
-      <div class="w-1/2 mb-24">
-        <div class="text-7xl text__title" >
+    <div class="w-full hero__section text-white flex items-center md:pl-20">
+      <div class="md:w-1/2 mb-24 w-full md:text-justify text-center">
+        <div class="md:text-7xl text-4xl text__title">
           APUESTA AHORA
         </div>
-        <div class="text-4xl mt-5 text__title">
-  
+        <div class="md:text-4xl text-lg mt-5 text__title">
           Pon a los mejores en tu parley
         </div>
       </div>

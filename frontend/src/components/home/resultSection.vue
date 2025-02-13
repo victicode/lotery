@@ -7,7 +7,7 @@ import sportSection from '@/components/home/results/sportSection.vue';
 
 </script>
 <template>
-  <section class="px-36 mx-12 mt-12">
+  <section class="md:px-36 md:mx-12 mx-4 mt-12 ">
     <loterySection />
     <animalitosSection />
     <rifasSection />

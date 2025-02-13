@@ -11,7 +11,9 @@ const methods = [
 </script>
 <template>
   <section class="mt-24">
-    <div class="text-center text-gray-700 step_pay--title text-4xl">Aceptamos diversos metodos de pago</div>
+    <div class="text-center text-gray-700 step_pay--title text-2xl md:text-4xl px-1 md:px-0">
+      Aceptamos diversos metodos de pago
+    </div>
     <div class="flex justify-center mt-5">
       <img :src="img" alt="" v-for="(img, key) in methods" :key="key">
     </div>
