@@ -10,12 +10,16 @@ const ApiService = {
    * Set the default HTTP request headers
    */
   setHeader() {
-    axios.defaults.headers.common[
-      "Authorization"
-    ] = `Bearer ${JwtService.getToken()}`;
+    // axios.defaults.headers.common[
+    //   "Authorization"
+    // ] = `Bearer ${JwtService.getToken()}`;
     axios.defaults.headers.common[
       "Accept"
     ] = `application/json`;
+
+    axios.defaults.headers.common[
+      "Content-Type"
+    ] = `application/json;charset=UTF-8`;
   },
 
   query(resource, params) {
@@ -32,6 +36,14 @@ const ApiService = {
     return axios.get(`${resource}/${slug}`);
   },
 
+/**
+   * Send the GET HTTP request with proxy
+   * @param resource
+   * @returns {*}
+   */
+  getThirdParty(resource) {
+    return axios.get(resource);
+  },
   /**
    * Set the POST HTTP request
    * @param resource

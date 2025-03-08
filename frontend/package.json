@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 10.10.10.69 --port 8054",
+    "dev": "vite --port 8054",
     "build": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest",
